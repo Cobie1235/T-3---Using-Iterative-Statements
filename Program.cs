@@ -21,18 +21,18 @@ namespace T3_Using_Iterative_Statements
                 Console.Write("Please, enter CAD increment value[5-25]: ");
                 increment = int.Parse(Console.ReadLine());
             }
-            //display table header
+            //display table header after number input
             Console.WriteLine("    CAD       US$");
             Console.WriteLine("-----------------");
             //display table
             for (int cad = 0; cad <= 200; cad += increment)
             {
-                //calculate us dollar value
+                //calculate us dollar value after enter
                 double usd = cad * RATE;
                 //display lines
                 Console.WriteLine("{0,7:F2}    {1,6:F2}", cad, usd);
             }
-            //wait for press any key to exit the program
+            //wait for press any key to exit the program after serach is complete
             Console.WriteLine("Press any key to exit the program");
             Console.ReadKey(true);
 
